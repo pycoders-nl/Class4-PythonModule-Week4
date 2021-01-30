@@ -1,7 +1,7 @@
 # Class4-PythonModule-Week4
 
 ## 1 - Random Password 
-As a user, I want to use a program which can generate random password and display the result on user interface. so that I can generate my password for any application.
+As a user, I want to use a program which can generate random password and display the result on user interface. So that I can generate my password for any application.
 
 **Acceptance Criteria:**
 
@@ -12,7 +12,7 @@ As a user, I want to use a program which can generate random password and displa
 * The result should be display on the password label when the user click the generate button.
 
 ## 2 - The Least Common Multiple
-As a user, I want to use a program which can calculate the least common multiple (L.C.M.) of four numbers. so that I can find the least common multiple (L.C.M.) of my inputs.
+As a user, I want to use a program which can calculate the least common multiple (L.C.M.) of four numbers. So that I can find the least common multiple (L.C.M.) of my inputs.
 
 **Acceptance Criteria:**
 
@@ -23,7 +23,7 @@ As a user, I want to use a program which can calculate the least common multiple
 
 
 ## 3- Number Guessing Game
-As a player,  I want to play a game which I can guess a number the computer chooses in the range I chose. so that I can try to find the correct number which was selected by computer.
+As a player,  I want to play a game which I can guess a number the computer chooses in the range I chose. So that I can try to find the correct number which was selected by computer.
 
 **Acceptance Criteria:**
 
@@ -35,7 +35,7 @@ As a player,  I want to play a game which I can guess a number the computer choo
 * You can assume that the user will enter valid input.
 
 ## 4- Mis Calculator
-As a user, I want to use a program which can calculate basic  mathematical operations. so that I can add, subtract, multiply or divide my inputs.
+As a user, I want to use a program which can calculate basic  mathematical operations. So that I can add, subtract, multiply or divide my inputs.
 
 **Acceptance Criteria:**
 
