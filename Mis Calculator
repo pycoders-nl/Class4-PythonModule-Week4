@@ -1,0 +1,63 @@
+# 4- Mis Calculator
+
+"""
+==========Ayri Dosyalarda tanimlanan ve modul olarak yuklenen fonksiyonlar
+*add.py
+def add(a,b):
+    print(a+b)
+    
+*sub.py
+def sub(a,b):
+    print(a-b)
+    
+*mult.py
+def mult(a,b):
+    print(a*b)
+    
+*div.py
+def div(a,b):
+    print(a/b)
+==========Ayri Dosyalarda tanimlanan ve modul olarak yuklenen fonksiyonlar
+"""
+
+import math
+import add
+import sub
+import div
+import mult
+
+
+while True:
+    try:
+        a=float(input("Lutfen 1.sayiyi giriniz: "))
+        b=float(input("Lutfen 2.sayiyi giriniz: "))
+        a1=math.ceil(a)
+        b1=math.ceil(b)
+    except ValueError:
+        print("Oops, hata var. Lutfen sayi giriniz: \n")
+        continue
+    print("\nMenu: Seciminizi Yapinizi:  \n\n 1)Add\n 2)Subtract\n 3)Multiply\n 4)Divide\n")
+    operation=input("")
+    if operation=="Add":
+        add.add(a1,b1)
+    elif operation=="Subtract":
+        sub.sub(a1,b1)
+    elif operation=="Multiply":
+        mult.mult(a1,b1)
+    elif operation=="Divide":
+        try:
+            div.div(a1,b1)
+        except ZeroDivisionError:
+            print("Lutfen 0`dan farkli bir sayi giriniz: \n")
+            continue
+    else:
+        print("Lutfen yukarida belirtilen 4 islemden birini seciniz \n")
+        continue
+    a=input("Devam etmek icin tercih yapiniz YES or NO \n")
+    if a=="YES":
+        continue
+    elif a=="NO":
+        break
+    else:
+        print("Lutfen dogru secimi yapiniz \n")
+        a = input("Devam etmek icin tercih yapiniz YES or NO \n")
