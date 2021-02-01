@@ -11,7 +11,7 @@ The result should be display on the password label when the user click the gener
 '''
 
 
-
+# http://54.234.188.223:8501/
 # streamlit run app.py
 
 from random import choice,shuffle
