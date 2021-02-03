@@ -1,0 +1,31 @@
+
+# least common multiple program
+
+import math
+
+print("Welcome to Least Common Multiple Program. Please enter 4 numbers")
+
+liste=[]
+n=1
+while n<5:
+    number=input("Enter the {}. number ".format(n))
+    try:
+        number=int(number)
+        if not number:
+            raise ValueError
+    except ValueError:
+        print("Please enter a valid number")
+        continue
+    n+=1
+    liste.append(number)
+gcd1=math.gcd(liste[0],liste[1])
+gcd2=math.gcd(liste[2],liste[3])
+lcm1=int((liste[0]*liste[1])/(gcd1))
+lcm2=int((liste[2]*liste[3])/(gcd2))
+gcdson=math.gcd(lcm1, lcm2)
+
+lcmson=(lcm1*lcm2)/(gcdson)
+
+print("LCM of {},{},{},{} is {}".format(liste[0],liste[1],liste[2],liste[3],int(lcmson)))
+
+    
