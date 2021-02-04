@@ -48,7 +48,12 @@ def calculate():        # hangi islemi yapacagimizi seciyoruz
             multiply(number_1, number_2))
 
     elif int(select) == 4:
-        print(number_1, "/", number_2, "=",
+        try:
+            assert number_2 != float(0)
+        except :                                    # 0'a bolumde uyarip, bastan aliyoruz
+            print("Ooops, ZeroDivisionError!!! ")
+        else:
+            print(number_1, "/", number_2, "=",
             divide(number_1, number_2))
 
     new_operation = input("Would you like a new calculation, key y/n: ")
